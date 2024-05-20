@@ -1,0 +1,57 @@
+html {
+    font-family: "Anta", sans-serif;
+}
+
+.title {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    align-items:center;
+}
+
+.title > .image {
+    display: flex;
+    max-width: 200px;
+    order: 3;
+    justify-content: right;
+}
+
+.portrait {
+    vertical-align: top;
+    max-width: 100%;
+    min-width: 100px;
+   
+}
+
+.title > * {
+    flex: 1;
+
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: justify;
+}
+.container h2 {
+    margin-bottom: 0px;
+}
+
+.container > * {
+ 
+}
+
+.skills {
+    display: flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+
+}
+
+
+.links {
+    display: flex;
+    gap: 20px;
+
+}
