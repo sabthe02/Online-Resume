@@ -4,9 +4,9 @@ html {
 .container {
     height: 100vh;
     display:grid;
-    column-gap: 20px;
-    grid-template-columns: 200px, auto;
-    grid-template-rows: 100px, 100px, 100px, auto, auto, auto, auto, auto, auto, auto, auto;
+    grid-template-columns: 300px auto;
+    grid-template-rows: 100px auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
+    column-gap:20px;
 }
 
 .title {
@@ -15,22 +15,20 @@ html {
     align-items:center;
     grid-column-start:2;
     grid-row-start:2;
+    grid-row-end: 3;
 
 }
 
 .image {
     grid-column-start: 1;
-    grid-row-start: 3;
-    grid-row-end:4;
+    grid-row-start: 2;
+    grid-row-end: 4;
     display: flex;
     max-width: 250px;
     justify-content: center;
     align-items: top;
     padding-bottom: 5px;
 }
-
-
-
 
 .portrait {
     vertical-align: top;
@@ -41,51 +39,51 @@ html {
 }
 
 .contact-information {
-    grid-row-start: 4;
+    grid-row-start: 5;
     grid-column-start:1;
-    grid-row-end: 5;
+    grid-row-end: 7;
 }
 
 .summary {
     grid-column-start:1;
-    grid-row-start:5;
-    grid-row-end:6;
+    grid-row-start:8;
 }
 
 .skills{
     grid-column-start: 1;
-    grid-row-start:6;
+    grid-row-start:11;
+    grid-row-end: 14;
 }
 .education, .work-experience {
     grid-column-start:2;
+
 }
 .work-experience {
-    grid-column-start:2;
     grid-row-start: 3;
-    grid-row-end: 8;
+    grid-row-end: 12;
 
 }
 
 .education {
-    grid-row-start:8;
+    grid-row-start:12;
 }
 
 
 .certifications{
     grid-column-start:2;
-    grid-row-start:9;
+    grid-row-start:13;
 }
 
 .languages {
     grid-column-start: 2;
-    grid-row-start: 10;
+    grid-row-start: 14;
 }
 
-.empty {
+/* .empty {
     grid-column-start: 1;
     grid-row:span 1;
-}
-
+} */
+/* 
 .horizontal-rule {
 background-color: black;
 height: 1px;
@@ -97,7 +95,7 @@ width:auto;
 background-color: black;
 height: auto;
 width: 1px;
-}
+} */
 
 
 
@@ -106,11 +104,13 @@ width: 1px;
 .links {
     display: flex;
     gap: 20px;
-    grid-column: span 2;
-    grid-row: span 1;
+    justify-content: space-around;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 15;
 
 }
 .footer {
-    grid-column-start:2;
-    grid-row-start:8;
+    grid-column-start:1;
+    grid-row-start:16;
 }
