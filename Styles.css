@@ -1,5 +1,7 @@
 html {
     font-family: "Anta", sans-serif;
+    color:white;
+    background-color: rgba(0, 0, 0, 0.866);
 }
 .container {
     height: 100vh;
@@ -9,6 +11,17 @@ html {
     column-gap:20px;
 }
 
+.grey {
+    background-color:rgba(74, 74, 74, 0.595);
+    height: 250px;
+}
+.turquoise {
+    grid-column-start: 1;
+    grid-row-start: 3;
+    grid-row-end:16;
+    background-color: rgba(146, 233, 255, 0.703);
+}
+
 .title {
     display:flex;
     flex-direction:column;
@@ -16,6 +29,7 @@ html {
     grid-column-start:2;
     grid-row-start:2;
     grid-row-end: 3;
+    color:rgb(0, 204, 255);
 
 }
 
@@ -26,8 +40,11 @@ html {
     display: flex;
     max-width: 250px;
     justify-content: center;
-    align-items: top;
-    padding-bottom: 5px;
+    align-items: center;
+    border-style: solid;
+    border-width: 2px;
+    color:rgb(0, 204, 255);
+    margin: 20px;
 }
 
 .portrait {
@@ -36,6 +53,14 @@ html {
     max-height:100%;
     min-width: 150px;
    
+}
+
+.contact-information, .summary, .skills {
+    color: black;
+    display:flex;
+    flex-direction: column;
+    padding:20px;
+
 }
 
 .contact-information {
@@ -51,7 +76,7 @@ html {
 
 .skills{
     grid-column-start: 1;
-    grid-row-start:11;
+    grid-row-start:9;
     grid-row-end: 14;
 }
 .education, .work-experience {
@@ -60,29 +85,26 @@ html {
 }
 .work-experience {
     grid-row-start: 3;
-    grid-row-end: 12;
+    grid-row-end: 8;
 
 }
 
 .education {
-    grid-row-start:12;
+    grid-row-start:8;
 }
 
 
 .certifications{
     grid-column-start:2;
-    grid-row-start:13;
+    grid-row-start:9;
 }
 
 .languages {
     grid-column-start: 2;
-    grid-row-start: 14;
+    grid-row-start: 11;
 }
 
-/* .empty {
-    grid-column-start: 1;
-    grid-row:span 1;
-} */
+
 /* 
 .horizontal-rule {
 background-color: black;
@@ -112,5 +134,6 @@ width: 1px;
 }
 .footer {
     grid-column-start:1;
+    grid-column-end: 3;
     grid-row-start:16;
 }
