@@ -7,13 +7,13 @@ html {
     height: 100vh;
     display:grid;
     grid-template-columns: 300px auto;
-    grid-template-rows: 100px auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
+    grid-template-rows: 50px 150px 150px 50px auto auto auto auto auto auto auto auto auto auto auto auto;
     column-gap:20px;
 }
 
 .grey {
     background-color:rgba(74, 74, 74, 0.595);
-    height: 250px;
+    height: 300px;
 }
 .turquoise {
     grid-column-start: 1;
@@ -59,25 +59,27 @@ html {
     color: black;
     display:flex;
     flex-direction: column;
-    padding:20px;
+    margin: 20px;
+    justify-content:left;
 
 }
 
 .contact-information {
     grid-row-start: 5;
     grid-column-start:1;
-    grid-row-end: 7;
+    grid-row-end: 6;
 }
 
 .summary {
     grid-column-start:1;
-    grid-row-start:8;
+    grid-row-start:6;
+    grid-row-end:8;
 }
 
 .skills{
     grid-column-start: 1;
-    grid-row-start:9;
-    grid-row-end: 14;
+    grid-row-start:8;
+    grid-row-end: 12;
 }
 .education, .work-experience {
     grid-column-start:2;
@@ -85,48 +87,89 @@ html {
 }
 .work-experience {
     grid-row-start: 3;
-    grid-row-end: 8;
+    grid-row-end: 7;
 
 }
 
 .education {
-    grid-row-start:8;
+    grid-row-start:7;
+    grid-row-end: 8;
 }
 
 
 .certifications{
     grid-column-start:2;
-    grid-row-start:9;
+    grid-row-start:8;
+    grid-row-end: 10;
 }
 
 .languages {
     grid-column-start: 2;
-    grid-row-start: 11;
+    grid-row-start: 10;
+    grid-row-end: 12;
 }
 
+.hobbies {
+    grid-column-start:2;
+    grid-row-start: 12;
+    grid-row-end: 13;
+}
 
-/* 
+.bold {
+    font-weight:bold;
+}
+
 .horizontal-rule {
-background-color: black;
+background-color: rgb(0, 204, 255);
 height: 1px;
 width:auto;
 }
 
+.horizontal-rule-left {
+    display:flex;
+    justify-content: center;
+    margin: 20px;
+    background-color: black;
+    height: 2px;
+    width:auto;
+} 
 
-.vertical-line {
-background-color: black;
-height: auto;
-width: 1px;
-} */
+.one1 {
+    grid-column-start: 1;
+    grid-row-start: 6;
+}
 
+.two1 {
+    grid-column-start: 1;
+    grid-row-start: 8;
+}
 
+.one {
+    grid-column-start: 2;
+    grid-row-start: 3;
+}
 
-
+.two {
+    grid-column-start: 2;
+    grid-row-start: 7;
+}
+.three {
+    grid-column-start: 2;
+    grid-row-start: 8;
+}
+.four {
+    grid-column-start: 2;
+    grid-row-start: 10;
+}
+.five {
+    grid-column-start: 2;
+    grid-row-start: 12;
+}
 
 .links {
     display: flex;
     gap: 20px;
-    justify-content: space-around;
+    justify-content: center;
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start: 15;
