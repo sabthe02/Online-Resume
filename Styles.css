@@ -73,12 +73,12 @@ html {
 .summary {
     grid-column-start:1;
     grid-row-start:6;
-    grid-row-end:8;
+    grid-row-end:7;
 }
 
 .skills{
     grid-column-start: 1;
-    grid-row-start:8;
+    grid-row-start:7;
     grid-row-end: 12;
 }
 .education, .work-experience {
@@ -86,7 +86,7 @@ html {
 
 }
 .work-experience {
-    grid-row-start: 3;
+    grid-row-start: 4;
     grid-row-end: 7;
 
 }
@@ -125,6 +125,24 @@ height: 1px;
 width:auto;
 }
 
+.gradient-background {
+    background: linear-gradient(300deg, rgb(0, 204, 255), white);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+  }
+
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
 .horizontal-rule-left {
     display:flex;
     justify-content: center;
@@ -141,12 +159,12 @@ width:auto;
 
 .two1 {
     grid-column-start: 1;
-    grid-row-start: 8;
+    grid-row-start: 7;
 }
 
 .one {
     grid-column-start: 2;
-    grid-row-start: 3;
+    grid-row-start: 4;
 }
 
 .two {
