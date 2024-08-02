@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Resume</title>
-    <link rel = "stylesheet" href = "./Styles.css">
+    <link rel = "stylesheet" href = "././Styles/Styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anta&family=Comfortaa:wght@300..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
@@ -12,7 +12,13 @@
 </head>
 <body>
     <div class = "container">
-        
+        <div class = "navbar" id = "mouseover">
+            <h3 class = "home" onclick = "goToHome()">Home</h3>
+            <h3 class = "about" onclick = "goToAbout()">About</h3> 
+            <h3 class = "contact" onclick = "goToContact()">Contact</h3> 
+            <h3 class = "projects" onclick = "goToProjects()">Projects</h3> 
+            <h3 class = "references" onclick = "goToReferences()">References</h3>
+        </div>
         <div class = "grey">
         </div>
         <div class = "turquoise gradient-background">
@@ -190,18 +196,10 @@
             <h2>Hobbies</h2>
                 <p>Travel, technology, web design, languages, volleyball, music, reading</p>          
         </div>
-
-        <div class = "links">
-            <div class = "references">
-                <h3><a href = "./References.html">References</a></h3>  
-            </div>
-            <div class = "prjects">
-                <h3><a href = "./Projects.html">Projects</a></h3> 
-            </div>
-        </div>
     </div>
 
 </body>
+<script src="Scripts/Landing.js"></script>
 <footer>
 
 </footer>
