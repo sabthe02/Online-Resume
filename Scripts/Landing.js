@@ -22,20 +22,15 @@ function goToReferences() {
     window.location.href = '././References.html';
 }
 
-document.getElementById('mouseover').addEventListener("mouseover", (event) => {
-            switch (event.target.className) {
-                case 'home':
-                case 'about':
-                case'projects':
-                case 'contact':
-                case 'references':
-                case 'resume':
-                event.target.style.color = "rgb(0, 204, 255)";
-            }
+let number = document.querySelectorAll("h3").length;
 
-        setTimeout(()=>{
-            event.target.style.color = "";
-        }, 500);
-    }, 
-    false,
-);
+for (let i =0; i <number;i++) {
+    document.querySelectorAll("h3")[i].addEventListener("mouseenter", (event) =>{
+        event.target.style.color = "rgb(0, 204, 255)";
+    });
+}
+for (let i =0; i <number;i++) {
+    document.querySelectorAll("h3")[i].addEventListener("mouseleave", (event) =>{
+        event.target.style.color = "";
+    });
+}
